@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mental Health & Stress Coaching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pastel-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-heart text-primary me-2"></i>
+                <div>
+                    <div>Mindful Connections</div>
+                    <div class="brand-subtitle">by Vishal Taneja</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="philosophy.html">My Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who-i-help.html">Who I Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary mb-4" style="font-family: 'Playfair Display', serif;">Get in Touch</h1>
+                    <p class="lead text-secondary mb-4">
+                        Ready to transform your life? I'd love to hear from you. Whether you're interested in a free consultation or have questions about my programs, I'm here to help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <div class="info-icon mb-3">
+                            <i class="fas fa-calendar-check display-4 text-primary"></i>
+                        </div>
+                        <h5 class="text-primary mb-3">Free Consultation</h5>
+                        <p class="text-muted mb-3">
+                            Book a free 20-minute consultation to discuss your needs and see if we're a good fit.
+                        </p>
+                        <a href="#contactForm" class="btn btn-outline-primary btn-sm" onclick="scrollToForm()">
+                            <i class="fas fa-calendar me-2"></i>Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <div class="info-icon mb-3">
+                            <i class="fas fa-phone-alt display-4 text-primary"></i>
+                        </div>
+                        <h5 class="text-primary mb-3">Phone</h5>
+                        <p class="text-muted mb-3">
+                            <a href="tel:++91 9810107276" class="text-decoration-none text-muted">
+                                <strong>+91 9810107276</strong>
+                            </a><br>
+                            <small>Mon-Fri: 9AM-6PM IST</small>
+                        </p>
+                        <a href="tel:++91 9810107276" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <div class="info-icon mb-3">
+                            <i class="fas fa-envelope display-4 text-primary"></i>
+                        </div>
+                        <h5 class="text-primary mb-3">Email</h5>
+                        <p class="text-muted mb-3">
+                            <a href="mailto:Acca.vishaltaneja@gmail.com" class="text-decoration-none text-muted">
+                                <strong>Acca.vishaltaneja@gmail.com</strong>
+                            </a><br>
+                            <small>Response within 24 hours</small>
+                        </p>
+                        <a href="mailto:Acca.vishaltaneja@gmail.com" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-envelope me-2"></i>Email Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5 bg-light-pastel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-container p-5 rounded-4 bg-white shadow-sm">
+                        <div class="form-header text-center mb-5">
+                            <h2 class="display-5 fw-bold text-primary mb-3" style="font-family: 'Playfair Display', serif;">Send Me a Message</h2>
+                            <p class="text-secondary">
+                                Fill out the form below and I'll get back to you within 24 hours to schedule your free consultation.
+                            </p>
+                        </div>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label text-primary fw-semibold">First Name *</label>
+                                    <input type="text" class="form-control form-control-lg" id="firstName" name="firstName" required>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label text-primary fw-semibold">Last Name *</label>
+                                    <input type="text" class="form-control form-control-lg" id="lastName" name="lastName" required>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label text-primary fw-semibold">Email Address *</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label text-primary fw-semibold">Phone Number</label>
+                                    <input type="tel" class="form-control form-control-lg" id="phone" name="phone">
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="program" class="form-label text-primary fw-semibold">Program Interest</label>
+                                <select class="form-select form-select-lg" id="program" name="program">
+                                    <option value="">Select a program (optional)</option>
+                                    <option value="Mental Health Mastery">Free session</option>
+                                    <option value="Mental Health Mastery">Mental Health</option>
+                                    <option value="Relationship Harmony">Relationship Harmony</option>
+                                    <option value="Stress-Free Living">Stress-Free Living</option>
+                                    <option value="Personal Transformation">Personal Transformation</option>
+                                    <option value="Not Sure">Not Sure - Help me choose</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-primary fw-semibold">Subject *</label>
+                                <input type="text" class="form-control form-control-lg" id="subject" name="subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-primary fw-semibold">Message *</label>
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="6" required placeholder="Tell me about what you're going through and how you think I can help..."></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                    <label class="form-check-label text-muted" for="newsletter">
+                                        I'd like to receive occasional tips and updates about mental health and wellness.
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-primary mb-4" style="font-family: 'Playfair Display', serif;">Quick Ways to Connect</h2>
+                    <p class="lead text-secondary">
+                        Choose the method that works best for you. I'm here to support your journey to better mental health.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="quick-contact-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <i class="fas fa-calendar-check text-primary display-4 mb-3"></i>
+                        <h5 class="text-primary mb-3">Free Consultation</h5>
+                        <p class="text-muted mb-4">
+                            Book a free 20-minute consultation to discuss your needs and see if we're a good fit.
+                        </p>
+                        <a href="#contactForm" class="btn btn-outline-primary" onclick="scrollToForm()">
+                            <i class="fas fa-calendar me-2"></i>Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="quick-contact-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <i class="fas fa-phone-alt text-primary display-4 mb-3"></i>
+                        <h5 class="text-primary mb-3">Call Directly</h5>
+                        <p class="text-muted mb-4">
+                            Prefer to talk? Give me a call during business hours for immediate assistance.
+                        </p>
+                        <a href="tel:+919810107276" class="btn btn-outline-primary">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="quick-contact-card p-4 rounded-3 bg-light-pastel text-center h-100 border-0 shadow-sm">
+                        <i class="fas fa-whatsapp text-primary display-4 mb-3"></i>
+                        <h5 class="text-primary mb-3">WhatsApp Message</h5>
+                        <p class="text-muted mb-4">
+                            Send me a WhatsApp message for quick questions or to schedule a callback.
+                        </p>
+                        <a href="https://wa.me/919810107276" class="btn btn-outline-primary" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Message Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light-pastel">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-primary mb-4" style="font-family: 'Playfair Display', serif;">Frequently Asked Questions</h2>
+                    <p class="lead text-secondary">
+                        Common questions about getting started and working together.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-white text-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    How quickly will you respond to my message?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    I typically respond to all inquiries within 24 hours during business days (Monday-Friday). If you contact me over the weekend, I'll get back to you on Monday morning.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-white text-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    What can I expect during the free consultation?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    During our 20-minute free consultation, we'll discuss your current challenges, your goals for coaching, and determine if we're a good fit for working together. There's no obligation to continue after this call.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-white text-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Do you offer in-person sessions?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Currently, all sessions are conducted online via video call. This allows me to work with clients worldwide and provides flexibility in scheduling. Online sessions are just as effective as in-person sessions.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-white text-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    What payment methods do you accept?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    I accept bank transfers, UPI payments, and major credit cards. Payment plans are available for longer programs. All payments are processed securely.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed bg-white text-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    How long are the coaching programs?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Each program typically runs for 8-12 weeks, with weekly 60-minute sessions. However, the duration can be adjusted based on your specific needs and progress. We'll discuss the best timeline during your consultation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-card p-5 rounded-4 bg-primary text-white">
+                        <h2 class="display-5 fw-bold mb-4" style="font-family: 'Playfair Display', serif;">Ready to Take the First Step?</h2>
+                        <p class="lead mb-4">
+                            Don't let another day pass feeling stuck or overwhelmed. Reach out today and let's begin your transformation journey together.
+                        </p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <a href="#contactForm" class="btn btn-light btn-lg w-100" onclick="scrollToForm()">
+                                    <i class="fas fa-envelope me-2"></i>Send Me a Message
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Mindful Connections</h5>
+                    <p class="text-light">
+                        Transform your life through meaningful connections and holistic well-being practices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="programs.html" class="text-light text-decoration-none">Programs</a></li>
+                        <li><a href="philosophy.html" class="text-light text-decoration-none">Philosophy</a></li>
+                        <li><a href="who-i-help.html" class="text-light text-decoration-none">Who I Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Mental Health Coaching</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Stress Management</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Relationship Building</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Personal Growth</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:acca.vishaltaneja@gmail.com" class="text-light text-decoration-none">acca.vishaltaneja@gmail.com</a></li>
+                        <li><i class="fas fa-phone me-2"></i><a href="tel:+919810107276" class="text-light text-decoration-none">+91 9810107276</a></li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Online Sessions Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2026 Mindful Connections by Vishal Taneja. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Contact page specific JavaScript
+        function scrollToForm() {
+            document.getElementById('contactForm').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function bookConsultation() {
+            // Set the program to "Free Consultation" and scroll to form
+            const programSelect = document.getElementById('program');
+            if (programSelect) {
+                programSelect.value = 'Not Sure';
+            }
+            scrollToForm();
+        }
+
+        // Enhanced form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (this.checkValidity()) {
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Thank you for your message! I will get back to you within 24 hours to schedule your free consultation.');
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            } else {
+                this.classList.add('was-validated');
+            }
+        });
+
+        // Auto-fill program if coming from programs page
+        window.addEventListener('DOMContentLoaded', function() {
+            const selectedProgram = getSelectedProgram();
+            if (selectedProgram) {
+                const programSelect = document.getElementById('program');
+                if (programSelect) {
+                    // Find the option that contains the program name
+                    for (let option of programSelect.options) {
+                        if (option.text.includes(selectedProgram.name)) {
+                            option.selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
